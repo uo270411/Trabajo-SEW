@@ -1,0 +1,36 @@
+
+h1{
+	float : none;
+	text-align: center;
+	left: 200px;
+	top: 10px;
+}
+img{
+float: none;
+}
+.right{
+	float:right;
+}
+div{
+	align:center;
+  display: table;
+  clear: both;
+}
+video{
+float : none;
+text-align: center;
+}
+body {
+	float : none;
+}
+p{
+	float : left;
+}
+table{
+	float : none;
+}
+nav{
+	float : center;
+	text-align: center;
+	
+}
