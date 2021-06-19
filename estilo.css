@@ -1,0 +1,175 @@
+
+title{
+	font-family: verdana,arial,
+          Times, serif;
+    color: red;
+	text-align: center;
+	font-size : 22pt;
+	background-color : lavender;
+}
+body {
+	background-image: url("multimedia/fondo.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	 background-size: cover;
+    font-family: Georgia, "Times New Roman",
+          Times, serif;
+    color: black;
+	text-align: left;
+	background-color : lavender;
+    }
+	button{
+		border-radius: 12px;
+		background-color: #e7e7e7;
+		border: 2px solid #555555;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	img{
+		width=533;
+		height=400;
+		padding: 30px;
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+	h1 {
+		text-align: left; 
+		font-family: Comic Sans MS; 
+		font-weight:bold; 
+		font-size: 50px; 
+		color: #8faef2; 
+		text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68; 6px 6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
+    }
+	h2 {
+		text-align: left; 
+		font-family: Arial Black; 
+		font-weight: bold; font-size: 40px; 
+		background: #202020; 
+		-webkit-background-clip: text; 
+		margin-left: 120px;
+		-moz-background-clip: text; 
+		background-clip: text; 
+		color: transparent; 
+		text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+    }
+	h3 {
+	margin-left: 120px;
+    font-family: cursive,arial,
+          Times, serif;
+    color: black;
+	text-align: left;
+	font-size : 20pt;
+    }
+	div {
+		overflow: hidden;
+		margin-left: 120px;
+	}
+	.center{
+		margin-left: auto;
+    margin-right: auto;
+    display: block
+	}
+	.logo{
+		margin-left: auto;
+    margin-right: auto;
+	}
+	.caja{
+	background:#90EE90;
+	color:white;
+	font-weight:bold;
+	padding:30px;
+	border:3px solid #2d572c;
+	width: 400px;
+	text-align:center;
+	font-size:22px;
+	border-radius:10px;
+	margin-left:200px;
+	}
+	
+	.intro{
+	background:#90EE90;
+	color:white;
+	font-weight:bold;
+	padding:30px;
+	border:3px solid #2d572c;
+	width: 400px;
+	text-align:center;
+	font-size:22px;
+	border-radius:10px;
+	margin-left:370px;
+	}
+	
+	table{
+		font-family: Georgia, "Times New Roman",
+          Times, serif;
+    color: black;
+	border: solid 1px black;
+	font-size : 20pt;
+	border-collapse: collapse;
+	background-color : lavender;
+	}
+	p{
+	}
+
+nav  {
+	float:none
+    display: block;
+    width: 100%;
+    overflow: hidden;
+	margin-left: 400px;
+}
+
+#menu {
+    margin: 80px 0 20px 0;
+    padding: .7em;
+    float: left;
+    list-style: none;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: .5em;    
+    box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 2px 1px rgba(0,0,0,.8) inset; 
+}
+
+#menu li {
+    float:left;
+}
+
+#menu a {
+    float:left;
+    padding: .8em 1.5em;
+    text-decoration: none;
+    color: #555;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    font: bold 1.1em/1 'trebuchet MS', Arial, Helvetica;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #ccc #999 #eee;
+    background: #c1c1c1;
+    background: linear-gradient(#f5f5f5, #c1c1c1);            
+ }
+ 
+#menu a:hover, nav a:focus {
+    outline: 0;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    background: #fac754;
+    background: linear-gradient(#fac754, #f8ac00);
+}
+
+#menu a:active {
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
+}
+	
+	
+	td{
+		border: solid 1px black;
+	}
+	

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<informes
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+<informe>
+	<socorrista>Juan Menendez Lopez</socorrista>
+	<playa>San Lorenzo</playa>
+	<ubicacion>Gijón</ubicacion>
+	<horainicio>15:00</horainicio>
+	<horafinal>20:00</horafinal>
+	<ocupacion>55%.</ocupacion>
+	<oleaje>Bandera verde</oleaje>
+	<temperaturaagua>
+	<maxima>30</maxima>
+	<minima>25</minima>
+	<media>27</media>
+	</temperaturaagua>
+	<temperaturaambiente>
+	<maxima>27</maxima>
+	<minima>23</minima>
+	<media>25</media>
+	</temperaturaambiente>
+	<Fotos>
+		<foto>https://cadenaser00.epimg.net/ser/imagenes/2020/07/04/ser_gijon/1593872001_575841_1593872171_noticia_normal.jpg</foto>
+	</Fotos>
+	<incidencias>
+	<incidencia>
+	<descripción>Ataque de medusas a los bañistas.</descripción>
+	<hora>17:55</hora>
+	<gravedad>7</gravedad>
+	</incidencia>
+	<incidencia>
+	<descripción>Robo de una mochila roja con datos personales.</descripción>
+	<hora>18:35</hora>
+	<gravedad>9</gravedad>
+	</incidencia>
+	</incidencias>
+</informe>
+
+<informe>
+	<socorrista>Nuria Martin Roca</socorrista>
+	<playa>Rodiles</playa>
+	<ubicacion>Villaviciosa</ubicacion>
+	<horainicio>09:00</horainicio>
+	<horafinal>14:00</horafinal>
+	<ocupacion>18%.</ocupacion>
+	<oleaje>Bandera amarilla</oleaje>
+	<temperaturaagua>
+	<maxima>35</maxima>
+	<minima>28</minima>
+	<media>31</media>
+	</temperaturaagua>
+	<temperaturaambiente>
+	<maxima>30</maxima>
+	<minima>23</minima>
+	<media>26</media>
+	</temperaturaambiente>
+	<Fotos>
+		<foto>https://cflvdg.avoz.es/default/2016/07/15/00121468596704878889188/Foto/rodihori.jpg</foto>
+	</Fotos>
+	<incidencias>
+	<incidencia>
+	<descripción>Desmayo de un bañista.</descripción>
+	<hora>12:23</hora>
+	<gravedad>9</gravedad>
+	</incidencia>
+	</incidencias>
+</informe>
+
+<informe>
+	<socorrista>Lucas Suarez Garcia</socorrista>
+	<playa>Cue</playa>
+	<ubicacion>Llanes</ubicacion>
+	<horainicio>15:00</horainicio>
+	<horafinal>20:00</horafinal>
+	<ocupacion>70%.</ocupacion>
+	<oleaje>Bandera verde</oleaje>
+	<temperaturaagua>
+	<maxima>37</maxima>
+	<minima>32</minima>
+	<media>35</media>
+	</temperaturaagua>
+	<temperaturaambiente>
+	<maxima>29</maxima>
+	<minima>24</minima>
+	<media>27</media>
+	</temperaturaambiente>
+	<Fotos>
+		<foto>https://llanesnet.com/wp-content/uploads/2018/02/playa-antilles-cue-llanes.jpg</foto>
+	</Fotos>
+	<incidencias>
+	<incidencia>
+	<descripción>Picadura de un escorpión.</descripción>
+	<hora>16:38</hora>
+	<gravedad>5</gravedad>
+	</incidencia>
+	<incidencia>
+	<descripción>Pelea entre dos bañistas.</descripción>
+	<hora>19:15</hora>
+	<gravedad>7</gravedad>
+	</incidencia>
+	</incidencias>
+</informe>
+
+</informes>
