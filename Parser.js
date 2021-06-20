@@ -1,5 +1,6 @@
 
 function procesar(){
+	$("p").remove();
 	var xml = document.getElementById("file").files[0];
 	var stringDatos="";
 	crearElemento("p","","footer");
@@ -10,7 +11,7 @@ function procesar(){
       request.setRequestHeader('Content-Type', 'application/xml');
     },
     dataType: "xml",
-    success: function (xml) {
+    success: function () {
 
       $(xml).find('informes').children('informe').each(function () {
         var name = "Socorrista: " + $(this).find('socorrista').text();
