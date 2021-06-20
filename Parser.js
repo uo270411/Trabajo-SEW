@@ -10,7 +10,7 @@ function procesar(url){
     success: function (xml) {
 
       $(xml).find('informes').children('informe').each(function () {
-		this.crearElemento("p","","footer");
+		crearElemento("p","","footer");
         var name = "Socorrista: " + $(this).find('socorrista').text();
         var playa = "Playa " + $(this).find('playa').text();
 		var ubi = "Ubicación: " + $(this).find('ubicacion').text();
