@@ -92,6 +92,19 @@ body {
 	margin-left:200px;
 	}
 	
+	.informe{
+	background:#90EE90;
+	color:white;
+	font-weight:bold;
+	padding:50px;
+	border:3px solid #2d572c;
+	width: 600px;
+	text-align:center;
+	font-size:22px;
+	border-radius:10px;
+	margin-left:200px;
+	}
+	
 	.intro{
 	background:#90EE90;
 	color:white;
