@@ -39,7 +39,7 @@ function procesar(url){
 		stringDatos += "<li>" + ambientemax + "</li>";
 		stringDatos += "<li>" + ambientemin + "</li>";
 		stringDatos += "<li>" + ambientemed + "</li>";
-		stringDatos += "<li><img src="+imagen+"></li>";
+		stringDatos += "<li><img  width='533' height='400' src="+imagen+"></li>";
         //$("<img></img>").attr('src', "" + imagen + "").appendTo("div");
 		$(this).find('incidencias').children('incidencia').each(function () {
 			var descripcion = $(this).find('descripción').text();
@@ -62,7 +62,7 @@ function procesar(url){
 
 function crearElemento(tipoElemento, texto, insertarAntesDe){
         var elemento = document.createElement(tipoElemento); 
-		elemento.className = "caja";
+		elemento.className = "informe";
         elemento.innerHTML = texto;
         $(insertarAntesDe).before(elemento);
     }
