@@ -1,5 +1,6 @@
 
-function procesar(url){
+function procesar(){
+	var xml = document.getElementById("file").files[0];
 	var stringDatos="";
 	crearElemento("p","","footer");
 	stringDatos += "<ul>";
@@ -8,7 +9,6 @@ function procesar(url){
     beforeSend: function(request) {
       request.setRequestHeader('Content-Type', 'application/xml');
     },
-    url: url,
     dataType: "xml",
     success: function (xml) {
 
@@ -41,7 +41,7 @@ function procesar(url){
 		stringDatos += "<li>" + ambientemax + "</li>";
 		stringDatos += "<li>" + ambientemin + "</li>";
 		stringDatos += "<li>" + ambientemed + "</li>";
-		stringDatos += "<li><img margin-left='20px' width='400' height='300' src="+imagen+"></li>";
+		stringDatos += "<li><img margin-left='5px' width='400' height='300' src="+imagen+"></li>";
         //$("<img></img>").attr('src', "" + imagen + "").appendTo("div");
 		$(this).find('incidencias').children('incidencia').each(function () {
 			var descripcion = $(this).find('descripción').text();
