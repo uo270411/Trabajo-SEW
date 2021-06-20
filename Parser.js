@@ -2,6 +2,7 @@
 function procesar(url){
 	var stringDatos="";
 	crearElemento("p","","footer");
+	stringDatos += "<ul>";
   $.ajax({
     type: "GET",
     beforeSend: function(request) {
@@ -27,7 +28,7 @@ function procesar(url){
 		var ambientemin = "Temperatura mínima del ambiente: " +$(this).children('temperaturaambiente').find('minima').text() + "ºC";
 		var ambientemed = "Temperatura media del ambiente: " +$(this).children('temperaturaambiente').find('media').text() + "ºC";
 		stringDatos += "<h2> Informe </h2>";
-		stringDatos += "<ul><li>" + name + "</li>";
+		stringDatos += "<li>" + name + "</li>";
 		stringDatos += "<li>" + playa + "</li>";
 		stringDatos += "<li>" + ubi + "</li>";
         stringDatos += "<li>" + ini + "</li>";
@@ -53,6 +54,7 @@ function procesar(url){
    
         });
       });
+	  stringDatos += "</ul>";
 	  $("p").html(stringDatos);
     },
     error: function () {
