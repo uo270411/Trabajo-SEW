@@ -39,10 +39,9 @@ function procesar(url){
 		stringDatos += "<li>" + ambientemax + "</li>";
 		stringDatos += "<li>" + ambientemin + "</li>";
 		stringDatos += "<li>" + ambientemed + "</li>";
-		stringDatos += "<li><img src="+imagen+"></li>";
         $("<img></img>").attr('src', "" + imagen + "").appendTo("div");
 		$(this).find('incidencias').children('incidencia').each(function () {
-			var descripcion = $(this).find('descripcion').text();
+			var descripcion = $(this).find('descripción').text();
 			var hora = $(this).find('hora').text();
 			var gravedad = $(this).find('gravedad').text();
 			stringDatos += "<li> Incidencia </li>";
@@ -61,7 +60,8 @@ function procesar(url){
 }
 
 function crearElemento(tipoElemento, texto, insertarAntesDe){
-        var elemento = document.createElement(tipoElemento); 
+        var elemento = document.createElement(tipoElemento);
+		elemento.class="caja";		
         elemento.innerHTML = texto;
         $(insertarAntesDe).before(elemento);
     }
