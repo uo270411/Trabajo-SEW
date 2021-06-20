@@ -34,14 +34,13 @@ function procesar(url){
 		stringDatos += "<li>" + fin + "</li>";
 		stringDatos += "<li>" + ocupacion + "</li>";
 		stringDatos += "<li>" + oleaje + "</li>";
-		stringDatos += "<li>" + imagen + "</li>";
 		stringDatos += "<li>" + aguamax + "</li>";
 		stringDatos += "<li>" + aguamin + "</li>";
 		stringDatos += "<li>" + aguamed + "</li>";
 		stringDatos += "<li>" + ambientemax + "</li>";
 		stringDatos += "<li>" + ambientemin + "</li>";
 		stringDatos += "<li>" + ambientemed + "</li>";
-		stringDatos += "<li><img margin-left='auto' width='400' height='300' src="+imagen+"></li>";
+		stringDatos += "<li><img margin-left='20px' width='400' height='300' src="+imagen+"></li>";
         //$("<img></img>").attr('src', "" + imagen + "").appendTo("div");
 		$(this).find('incidencias').children('incidencia').each(function () {
 			var descripcion = $(this).find('descripción').text();
