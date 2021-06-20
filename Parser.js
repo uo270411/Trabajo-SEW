@@ -1,4 +1,4 @@
-"use strict";
+
 function procesar(url){
   $.ajax({
     type: "GET",
