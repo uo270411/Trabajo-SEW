@@ -10,6 +10,7 @@ function procesar(url){
     success: function (xml) {
 
       $(xml).find('informes').children('informe').each(function () {
+		this.crearElemento("p","","footer");
         var name = "Socorrista: " + $(this).find('socorrista').text();
         var playa = "Playa " + $(this).find('playa').text();
 		var ubi = "Ubicación: " + $(this).find('ubicacion').text();
@@ -24,30 +25,33 @@ function procesar(url){
 		var ambientemax = "Temperatura máxima del ambiente: " +$(this).children('temperaturaambiente').find('maxima').text() + "ºC";
 		var ambientemin = "Temperatura mínima del ambiente: " +$(this).children('temperaturaambiente').find('minima').text() + "ºC";
 		var ambientemed = "Temperatura media del ambiente: " +$(this).children('temperaturaambiente').find('media').text() + "ºC";
-        $("<h2></h2>").html(name).appendTo("div");
-        $("<h2></h2>").html(playa).appendTo("div");
-		$("<li></li>").html(ubi).appendTo("div");
-		$("<li></li>").html(ini).appendTo("div");
-		$("<li></li>").html(fin).appendTo("div");
-		$("<li></li>").html(oleaje).appendTo("div");
-		$("<li></li>").html(ocupacion).appendTo("div");
-		$("<li></li>").html(aguamax).appendTo("div");
-		$("<li></li>").html(aguamin).appendTo("div");
-		$("<li></li>").html(aguamed).appendTo("div");
-		$("<li></li>").html(ambientemax).appendTo("div");
-		$("<li></li>").html(ambientemin).appendTo("div");
-		$("<li></li>").html(ambientemed).appendTo("div");
+		var stringDatos = "<ul><li>" + name + "</li>";
+		stringDatos += "<li>" + playa + "</li>";
+		stringDatos += "<li>" + ubi + "</li>";
+        stringDatos += "<li>" + ini + "</li>";
+		stringDatos += "<li>" + fin + "</li>";
+		stringDatos += "<li>" + ocupacion + "</li>";
+		stringDatos += "<li>" + oleaje + "</li>";
+		stringDatos += "<li>" + imagen + "</li>";
+		stringDatos += "<li>" + aguamax + "</li>";
+		stringDatos += "<li>" + aguamin + "</li>";
+		stringDatos += "<li>" + aguamed + "</li>";
+		stringDatos += "<li>" + ambientemax + "</li>";
+		stringDatos += "<li>" + ambientemin + "</li>";
+		stringDatos += "<li>" + ambientemed + "</li>";
+		stringDatos += "<li><img src="+imagen+"></li>";
         $("<img></img>").attr('src', "" + imagen + "").appendTo("div");
 		$(this).find('incidencias').children('incidencia').each(function () {
 			var descripcion = $(this).find('descripcion').text();
 			var hora = $(this).find('hora').text();
 			var gravedad = $(this).find('gravedad').text();
-			$("<h3></h3>").html("Incidencia").appendTo("div");
-			$("<li><li>").html(descripcion).appendTo("div");
-			$("<li><li>").html(hora).appendTo("div");
-			$("<li><li>").html(gravedad).appendTo("div");
+			stringDatos += "<li> Incidencia </li>";
+			stringDatos += "<li>" + descripcion + "</li>";
+			stringDatos += "<li>" + hora + "</li>";
+			stringDatos += "<li>" + gravedad + "</li>";
    
         });
+		 $("p").html(stringDatos);
       });
     },
     error: function () {
@@ -55,3 +59,9 @@ function procesar(url){
     }
   });
 }
+
+function crearElemento(tipoElemento, texto, insertarAntesDe){
+        var elemento = document.createElement(tipoElemento); 
+        elemento.innerHTML = texto;
+        $(insertarAntesDe).before(elemento);
+    }
