@@ -9,6 +9,8 @@
 <title>Informes</title>
 </head>
 <body>
+<img class='logo' width="auto" height="auto" src="multimedia/asturias.png"
+     alt="Logo del sitio web">
 <h1>Informes</h1> 
 <nav>
     <ul id="menu">
@@ -16,18 +18,19 @@
         <li><a href="pag1.html" target="_blank">Playas de Asturias</a></li>
         <li><a href="pag2.html" target="_blank">Actividades</a></li>
 		<li><a href="informes.html" target="_blank">Informes</a></li>
+		<li><a href="opiniones.html" target="_blank">Opiniones</a></li>
     </ul>
 </nav>
-<input type="file" id="file" name="Cargar informe XML" accept="xml"/>
+<input type="file" id="file" name="Cargar informe XML" accept="xml/*"/>
 
-<button class="but" onclick = "procesar()">Transformar xml</button>
+<button class="but" onclick = "procesar('informes.xml')">Transformar xml</button>
 
 <div>
 </div>
 
 <footer>
 <a href="http://jigsaw.w3.org/css-validator/check/referer">
-    <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS válido!" /></a>
+    <img class='css' src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS válido!" /></a>
 </footer>
 </body>
 </html>
