@@ -1,12 +1,10 @@
 
 function procesar(){
 	$("p").remove();
-	var xml = document.getElementById("file").files[0];
+	var xml = $.parseXML(document.getElementById("file").files[0]);
 	var stringDatos="";
 	crearElemento("p","","footer");
 	stringDatos += "<ul>";
-	var xmlDoc = $.parseXML(xml);
-	$xml = $(xmlDoc);
       $(xml).find('informes').children('informe').each(function () {
         var name = "Socorrista: " + $(this).find('socorrista').text();
         var playa = "Playa " + $(this).find('playa').text();
