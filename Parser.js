@@ -2,10 +2,18 @@
 function procesar(){
 	$("p").remove();
 	var xml = document.getElementById("file").files[0];
-	var xml = $.parseXML(xml);
 	var stringDatos="";
 	crearElemento("p","","footer");
 	stringDatos += "<ul>";
+  $.ajax({
+    type: "GET",
+    beforeSend: function(request) {
+      request.setRequestHeader('Content-Type', 'application/xml');
+    },
+	url: xml.name,
+    dataType: "xml",
+    success: function (xml) {
+
       $(xml).find('informes').children('informe').each(function () {
         var name = "Socorrista: " + $(this).find('socorrista').text();
         var playa = "Playa " + $(this).find('playa').text();
@@ -50,7 +58,12 @@ function procesar(){
       });
 	  stringDatos += "</ul>";
 	  $("p").html(stringDatos);
+    },
+    error: function () {
+      $("<p></p>").html('An error occurred while processing XML file.').prependTo("#results");
     }
+  });
+}
 
 function crearElemento(tipoElemento, texto, insertarAntesDe){
         var elemento = document.createElement(tipoElemento); 
