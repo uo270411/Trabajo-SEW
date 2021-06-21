@@ -1,7 +1,8 @@
 
 function procesar(){
 	$("p").remove();
-	var xml = $.parseXML(document.getElementById("file").files[0]);
+	var xml = document.getElementById("file").files[0];
+	var xml = $.parseXML(xml);
 	var stringDatos="";
 	crearElemento("p","","footer");
 	stringDatos += "<ul>";
