@@ -1,16 +1,20 @@
 
 function procesar(url){
+	$("p").remove();
+	//var xml = document.getElementById("file").files[0];
+	var stringDatos="";
+	crearElemento("p","","footer");
+	stringDatos += "<ul>";
   $.ajax({
     type: "GET",
     beforeSend: function(request) {
       request.setRequestHeader('Content-Type', 'application/xml');
     },
-    url: url,
+	url=url,
     dataType: "xml",
     success: function (xml) {
 
       $(xml).find('informes').children('informe').each(function () {
-		crearElemento("p","","footer");
         var name = "Socorrista: " + $(this).find('socorrista').text();
         var playa = "Playa " + $(this).find('playa').text();
 		var ubi = "Ubicación: " + $(this).find('ubicacion').text();
@@ -25,21 +29,21 @@ function procesar(url){
 		var ambientemax = "Temperatura máxima del ambiente: " +$(this).children('temperaturaambiente').find('maxima').text() + "ºC";
 		var ambientemin = "Temperatura mínima del ambiente: " +$(this).children('temperaturaambiente').find('minima').text() + "ºC";
 		var ambientemed = "Temperatura media del ambiente: " +$(this).children('temperaturaambiente').find('media').text() + "ºC";
-		var stringDatos = "<ul><li>" + name + "</li>";
+		stringDatos += "<h2> Informe </h2>";
+		stringDatos += "<li>" + name + "</li>";
 		stringDatos += "<li>" + playa + "</li>";
 		stringDatos += "<li>" + ubi + "</li>";
         stringDatos += "<li>" + ini + "</li>";
 		stringDatos += "<li>" + fin + "</li>";
 		stringDatos += "<li>" + ocupacion + "</li>";
 		stringDatos += "<li>" + oleaje + "</li>";
-		stringDatos += "<li>" + imagen + "</li>";
 		stringDatos += "<li>" + aguamax + "</li>";
 		stringDatos += "<li>" + aguamin + "</li>";
 		stringDatos += "<li>" + aguamed + "</li>";
 		stringDatos += "<li>" + ambientemax + "</li>";
 		stringDatos += "<li>" + ambientemin + "</li>";
 		stringDatos += "<li>" + ambientemed + "</li>";
-		stringDatos += "<li><img  width='533' height='400' src="+imagen+"></li>";
+		stringDatos += "<li><img margin-left='5px' width='400' height='300' src="+imagen+"></li>";
         //$("<img></img>").attr('src', "" + imagen + "").appendTo("div");
 		$(this).find('incidencias').children('incidencia').each(function () {
 			var descripcion = $(this).find('descripción').text();
@@ -51,8 +55,9 @@ function procesar(url){
 			stringDatos += "<li>" + gravedad + "</li>";
    
         });
-		 $("p").html(stringDatos);
       });
+	  stringDatos += "</ul>";
+	  $("p").html(stringDatos);
     },
     error: function () {
       $("<p></p>").html('An error occurred while processing XML file.').prependTo("#results");
