@@ -10,7 +10,7 @@ function procesar(url){
     beforeSend: function(request) {
       request.setRequestHeader('Content-Type', 'application/xml');
     },
-	url=url,
+	url: url,
     dataType: "xml",
     success: function (xml) {
 
