@@ -5,8 +5,8 @@ function procesar(){
 	var stringDatos="";
 	crearElemento("p","","footer");
 	stringDatos += "<ul>";
-	var xmlDoc = $.parseXML(xml),
-	$xml = $(xmlDoc),
+	var xmlDoc = $.parseXML(xml);
+	$xml = $(xmlDoc);
       $(xml).find('informes').children('informe').each(function () {
         var name = "Socorrista: " + $(this).find('socorrista').text();
         var playa = "Playa " + $(this).find('playa').text();
