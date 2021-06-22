@@ -4,14 +4,12 @@
 <meta charset="utf-8">
 <link rel="STYLESHEET" type="text/css" href="estilo.css">
 <link rel="STYLESHEET" type="text/css" href="layouts.css">
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="Parser.js"></script>
-<title>Informes</title>
+<title>Opiniones</title>
 </head>
 <body>
 <img class='logo' width="auto" height="auto" src="multimedia/asturias.png"
      alt="Logo del sitio web">
-<h1>Informes</h1> 
+<h1>Opiniones</h1> 
 <nav>
     <ul id="menu">
 		<li><a href="index.html" target="_blank">Inicio</a></li>
@@ -21,11 +19,16 @@
 		<li><a href="opiniones.html" target="_blank">Opiniones</a></li>
     </ul>
 </nav>
-<input type="file" id="file" name="Cargar informe XML" accept="xml/*"/>
-
-<button onclick = "procesar()">Transformar xml</button>
-
-<div>
+<div class="form">
+<h2>Esta es una sección en la que el usuario puede dejar su opinión de las playas que haya visitado.</h2> 
+<h3> Introduzca los siguientes datos: </h3>
+<form method="post" action="Procesador.php">
+<p>Nombre de usuario: <input type="text" name="usuario" /> </p>
+<p>Playa:  <input type="text" name="playa" /> </p>
+<p>Opinión: <input class="desc" type="text" name="opinion" /></p>
+<p>Imagen (opcional) <input type="file" name="imagen" accept="image/*"/></p>
+<p><input type="submit" value="Enviar" name="submit" class="but" /></p>
+</form>
 </div>
 
 <footer>
