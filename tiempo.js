@@ -86,6 +86,7 @@ class Meteo {
         this.cargarDatos();
     }
 	verCoordenadas(texto, ciudad){
+		$("h3").remove();
 		$("p").remove();
 		this.crearElemento("p","",texto);
 		this.url = "https://api.weatherbit.io/v2.0/current?city="+ciudad+"&country=ES&key=a8ed74d9f48e4ad89ae0076084f6f7a9&include=minutely"

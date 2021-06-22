@@ -5,7 +5,6 @@ title{
     color: red;
 	text-align: center;
 	font-size : 22pt;
-	background-color : lavender;
 }
 body {
 	background-image: url("multimedia/fondo.jpg");
@@ -17,7 +16,6 @@ body {
           Times, serif;
     color: black;
 	text-align: left;
-	background-color : lavender;
     }
 	button{
 		border-radius: 12px;
@@ -27,39 +25,45 @@ body {
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-size: 16px;
+		font-size: 20px;
 		margin: 4px 2px;
 		cursor: pointer;
 	}
+	input{
+		margin-top: 20px;
+		margin-left: 20px;
+		width: 200px;
+		padding: 15px;
+		
+	}
 	img{
-		width=533;
-		height=400;
-		padding: 30px;
-		margin-left: 70px;
-		margin-right: 70px;
+		width: 533px;
+		height: 400px;
+		padding: 20px;
+		margin-left: 20px;
+		margin-right: 50px;
 	}
 	h1 {
 		text-align: left; 
-		font-family: Comic Sans MS; 
+		font-family: 'Comic Sans MS'; 
 		font-weight:bold; 
 		font-size: 50px; 
 		color: #8faef2; 
-		text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68; 6px 6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
-    }
+		text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 6px 6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
+	}
 	h2 {
 		text-align: left; 
-		font-family: Arial Black; 
+		font-family: 'Arial Black'; 
 		font-weight: bold; font-size: 40px; 
 		background: #202020; 
 		-webkit-background-clip: text; 
-		margin-left: 120px;
+		margin-left: 40px;
 		-moz-background-clip: text; 
-		background-clip: text; 
 		color: transparent; 
 		text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
     }
 	h3 {
-	margin-left: 120px;
+	margin-left: 80px;
     font-family: cursive,arial,
           Times, serif;
     color: black;
@@ -70,14 +74,35 @@ body {
 		overflow: hidden;
 		margin-left: 120px;
 	}
+	.desc{
+		margin-top: 20px;
+		margin-left: 20px;
+		width: 500px;
+		padding: 20px;
+		height: 30px;
+		
+	}
+	.but{
+		margin-left: 230px;
+		
+	}
+	}
 	.center{
 		margin-left: auto;
     margin-right: auto;
     display: block
 	}
 	.logo{
+		width: 350px;
+		height: 100px;
 		margin-left: auto;
-    margin-right: auto;
+		margin-right: auto;
+	}
+	.css{
+		width: 100px;
+		height: 50px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.caja{
 	background:#90EE90;
@@ -89,7 +114,7 @@ body {
 	text-align:center;
 	font-size:22px;
 	border-radius:10px;
-	margin-left:200px;
+	margin-left:100px;
 	}
 	
 	.informe{
@@ -118,6 +143,18 @@ body {
 	margin-left:370px;
 	}
 	
+	.form{
+	background:#90EE90;
+	color:white;
+	font-weight:bold;
+	border:3px solid #2d572c;
+	width: 700px;
+	text-align:center;
+	font-size:22px;
+	border-radius:10px;
+	margin-left:320px;
+	}
+	
 	table{
 		font-family: Georgia, "Times New Roman",
           Times, serif;
@@ -125,21 +162,20 @@ body {
 	border: solid 1px black;
 	font-size : 20pt;
 	border-collapse: collapse;
-	background-color : lavender;
 	}
 	p{
+		margin-left:10px;
 	}
 
 nav  {
-	float:none
     display: block;
     width: 100%;
     overflow: hidden;
-	margin-left: 400px;
+	margin-left: 250px;
 }
 
 #menu {
-    margin: 80px 0 20px 0;
+    margin: 40px 0 20px 0;
     padding: .7em;
     float: left;
     list-style: none;
